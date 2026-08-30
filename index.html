@@ -3,15 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Emmerse Electrical — Melbourne Electricians</title>
-  <link rel="icon" type="image/png" href="emmerselogo.png" />
-  <link rel="apple-touch-icon" href="emmerselogo.png" />
-  <meta name="description" content="Emmerse Electrical. Melbourne electricians for data, car charging, maintenance, smart home programming, new builds, security, CCTV, and emergency work." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <title>Melbourne Electrician | Emmerse Electrical</title>
+  <meta name="description" content="Emmerse Electrical provides maintenance, service work, EV charger and CCTV installation across Metro Melbourne. Free quotes and 24/7 emergency callouts." />
+  <meta name="theme-color" content="#f7f3eb" />
+  <link rel="canonical" href="https://emmerse.au/" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/bebas-neue-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/images/hallway-lighting.webp" as="image" type="image/webp" fetchpriority="high" />
+
+  <meta property="og:title" content="Melbourne Electrician | Emmerse Electrical" />
+  <meta property="og:description" content="Reliable electrical maintenance, service work, EV charger and CCTV installation across Metro Melbourne." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://emmerse.au/" />
+  <meta property="og:image" content="https://emmerse.au/assets/images/emmerse-social-share.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Exterior and stair lighting installed by Emmerse Electrical" />
+  <meta property="og:site_name" content="Emmerse Electrical" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Melbourne Electrician | Emmerse Electrical" />
+  <meta name="twitter:description" content="Reliable electrical work across Metro Melbourne, with free quotes and 24/7 emergency callouts." />
+  <meta name="twitter:image" content="https://emmerse.au/assets/images/emmerse-social-share.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://emmerse.au/#organization",
+        "name": "Emmerse Electrical",
+        "legalName": "EMMERSON, JACK REILLY",
+        "url": "https://emmerse.au/",
+        "logo": "https://emmerse.au/emmerselogo.png",
+        "image": "https://emmerse.au/assets/images/emmerse-social-share.webp",
+        "telephone": "+61 410 265 528",
+        "email": "jack@emmerse.au",
+        "taxID": "51 737 303 613",
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "ABN", "value": "51 737 303 613" },
+          { "@type": "PropertyValue", "propertyID": "REC", "value": "35875" }
+        ],
+        "areaServed": { "@type": "AdministrativeArea", "name": "Metro Melbourne, Victoria" },
+        "sameAs": [
+          "https://www.instagram.com/emmerse.electrical/",
+          "https://www.google.com/maps?cid=1643601696380284558"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+61 410 265 528",
+          "email": "jack@emmerse.au",
+          "contactType": "customer service",
+          "areaServed": "Metro Melbourne",
+          "availableLanguage": "English"
+        },
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Building maintenance and electrical service work", "areaServed": "Metro Melbourne" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "EV charger installation", "areaServed": "Metro Melbourne" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CCTV and security installation", "areaServed": "Metro Melbourne" } }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://emmerse.au/#website",
+        "url": "https://emmerse.au/",
+        "name": "Emmerse Electrical",
+        "inLanguage": "en-AU",
+        "publisher": { "@id": "https://emmerse.au/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://emmerse.au/#webpage",
+        "url": "https://emmerse.au/",
+        "name": "Melbourne Electrician | Emmerse Electrical",
+        "isPartOf": { "@id": "https://emmerse.au/#website" },
+        "about": { "@id": "https://emmerse.au/#organization" },
+        "inLanguage": "en-AU"
+      }
+    ]
+  }
+  </script>
 
   <style>
+    @font-face {
+      font-family: "Bebas Neue";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("/assets/fonts/bebas-neue-latin.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 300 800;
+      font-display: swap;
+      src: url("/assets/fonts/manrope-latin.woff2") format("woff2");
+    }
     :root {
       --bg: #f7f3eb;
       --bg-2: #efe8dc;
@@ -58,6 +148,21 @@
     a { color: inherit; text-decoration: none; }
     button { font: inherit; border: 0; background: none; color: inherit; cursor: pointer; }
     h1, h2, h3, p { margin: 0; }
+    :focus-visible { outline: 3px solid var(--accent-dark); outline-offset: 4px; }
+
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 100;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: #fff;
+      transform: translateY(-160%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
     .display-font {
       font-family: "Bebas Neue", sans-serif;
@@ -343,6 +448,7 @@
 
     /* SECTIONS */
     section { position: relative; z-index: 2; }
+    section[id] { scroll-margin-top: 84px; }
     .section { padding: 88px 0; }
 
     .section-head { display: grid; grid-template-columns: 1fr 0.76fr; gap: 36px; align-items: end; margin-bottom: 40px; }
@@ -394,7 +500,7 @@
     .about-values { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .value { display: flex; align-items: flex-start; gap: 14px; padding: 18px; border-radius: 18px; background: rgba(255,255,255,0.68); border: 1px solid rgba(23,23,23,0.07); }
     .value-icon { width: 38px; height: 38px; border: 1px solid rgba(58,167,214,0.25); border-radius: 50%; display: grid; place-items: center; color: var(--accent); flex-shrink: 0; font-size: 0.95rem; background: rgba(58,167,214,0.06); }
-    .value h4 { font-size: 0.95rem; font-weight: 800; color: var(--ink); margin-bottom: 4px; line-height: 1.25; }
+    .value h3 { font-family: "Manrope", sans-serif; font-size: 0.95rem; font-weight: 800; color: var(--ink); margin-bottom: 4px; line-height: 1.25; letter-spacing: 0; }
     .value p { font-size: 0.84rem; color: var(--ink-soft); line-height: 1.5; }
 
     /* SERVICES */
@@ -410,12 +516,12 @@
     }
     .service {
       min-height: 260px;
-      padding: 38px 30px;
       background: var(--panel);
       position: relative;
       overflow: hidden;
       transition: transform .35s var(--ease), box-shadow .35s ease, background .35s ease;
     }
+    .service-link { display: block; min-height: 260px; padding: 38px 30px; }
     .service::after {
       content: "";
       position: absolute;
@@ -455,6 +561,7 @@
     .service:hover .service-icon { transform: translateY(-3px) rotate(-6deg) scale(1.08); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
     .service h3 { font-family: "Bebas Neue", sans-serif; font-size: 1.6rem; letter-spacing: 0.04em; margin-bottom: 12px; line-height: 1; }
     .service p { color: var(--ink-soft); font-size: 0.92rem; line-height: 1.65; }
+    .service-more { display: inline-block; margin-top: 14px; color: var(--accent-dark); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
 
     .service[data-svc="1"] { --sa:#3aa7d6; --sib:rgba(58,167,214,0.08); --sibd:rgba(58,167,214,0.2); }
     .service[data-svc="2"] { --sa:#4ade80; --sib:rgba(74,222,128,0.08); --sibd:rgba(74,222,128,0.2); }
@@ -506,6 +613,7 @@
     .work-caption p { color: rgba(255,255,255,0.82); font-size: 0.84rem; }
     .span-7 { grid-column: span 7; grid-row: span 2; }
     .span-5 { grid-column: span 5; grid-row: span 2; }
+    .span-6 { grid-column: span 6; grid-row: span 2; }
     .span-3 { grid-column: span 3; grid-row: span 2; }
 
     /* REVIEWS */
@@ -517,7 +625,7 @@
     .stars { color: var(--warm); font-size: 1rem; letter-spacing: 0.18em; margin-bottom: 6px; }
     .rating-label { color: var(--ink-soft); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; }
 
-    .review-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .review-cards { display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; }
     .review {
       min-height: 260px;
       padding: 28px;
@@ -555,9 +663,32 @@
       letter-spacing: 0.04em;
       flex-shrink: 0;
     }
-    .review-name { font-size: 0.82rem; font-weight: 700; color: var(--ink); letter-spacing: 0.02em; display: block; }
+    .review:nth-child(1) .avatar { --av: #3aa7d6; }
+    .review:nth-child(2) .avatar { --av: #4a9d69; }
+    .review:nth-child(3) .avatar { --av: #a87331; }
+    .review:nth-child(4) .avatar { --av: #2585ad; }
+    .review-name { font-size: 0.82rem; font-style: normal; font-weight: 700; color: var(--ink); letter-spacing: 0.02em; display: block; }
     .review-source { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-soft); display: block; }
     .review-stars { color: var(--warm); letter-spacing: 0.12em; font-size: 0.88rem; }
+    .reviews-link { display: inline-block; margin-top: 10px; color: var(--accent-dark); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+
+    /* FAQ */
+    .faq { background: var(--bg); }
+    .faq-list { max-width: 900px; border-top: 1px solid var(--line-strong); }
+    .faq-item { border-bottom: 1px solid var(--line-strong); }
+    .faq-item summary {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 22px 0;
+      font-weight: 800;
+      cursor: pointer;
+      list-style: none;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; flex-shrink: 0; color: var(--accent-dark); font-size: 1.35rem; line-height: 1; }
+    .faq-item[open] summary::after { content: "−"; }
+    .faq-answer { max-width: 760px; padding: 0 40px 22px 0; color: var(--ink-soft); }
 
     /* CTA */
     .cta { padding: 88px 0 68px; background: linear-gradient(to bottom, var(--panel-2), var(--bg)); }
@@ -638,16 +769,38 @@
       z-index: 2;
       background: var(--bg);
     }
-    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
     .footer-logo { display: flex; align-items: center; gap: 10px; color: var(--ink); font-family: "Bebas Neue", sans-serif; font-size: 1.1rem; letter-spacing: 0.06em; }
     .footer-logo-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
-    .footer-right { display: flex; align-items: center; gap: 22px; }
+    .footer-business { margin-top: 8px; font-size: 0.78rem; line-height: 1.7; }
+    .footer-right { display: flex; align-items: center; justify-content: flex-end; gap: 18px; flex-wrap: wrap; }
     .footer-link { font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color .3s ease; }
     .footer-link:hover { color: var(--accent); }
 
+    .mobile-cta {
+      display: none;
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: calc(10px + env(safe-area-inset-bottom));
+      z-index: 40;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 8px;
+      border: 1px solid var(--line-strong);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.94);
+      box-shadow: 0 18px 44px rgba(0,0,0,0.16);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .mobile-cta a { min-height: 48px; display: grid; place-items: center; border-radius: 12px; font-size: 0.82rem; font-weight: 800; letter-spacing: 0.04em; }
+    .mobile-cta-call { background: var(--ink); color: #fff; }
+    .mobile-cta-quote { border: 1px solid var(--line-strong); background: var(--panel); }
+
     /* REVEAL */
-    .reveal { opacity: 0; transform: translateY(28px); filter: blur(8px); transition: opacity .8s var(--ease), transform .8s var(--ease), filter .8s var(--ease); transition-delay: var(--delay, 0ms); }
-    .reveal.is-visible { opacity: 1; transform: none; filter: none; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .55s var(--ease), transform .55s var(--ease); transition-delay: var(--delay, 0ms); }
+    .reveal.is-visible { opacity: 1; transform: none; }
 
     /* ANIMATIONS */
     @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.5; transform:scale(.85); } }
@@ -663,12 +816,13 @@
       .hero-visual { height: 560px; }
       .services-grid, .review-cards, .contact-grid { grid-template-columns: repeat(2,1fr); }
       .work-grid { grid-template-columns: repeat(2,1fr); grid-auto-rows: 260px; }
-      .span-7, .span-5, .span-3 { grid-column: span 1; grid-row: span 1; }
+      .span-7, .span-6, .span-5, .span-3 { grid-column: span 1; grid-row: span 1; }
       .google-rating { text-align: left; }
       .about-copy { grid-template-columns: 1fr; }
     }
 
     @media (max-width:980px) {
+      body { padding-bottom: calc(82px + env(safe-area-inset-bottom)); }
       .wrap { width: min(var(--max), calc(100% - 44px)); }
       .nav-inner { position: relative; }
       .nav-cta { display: none; }
@@ -704,6 +858,7 @@
       .hero-actions { margin-bottom: 30px; }
       .hero-visual { height: 500px; }
       .section-head, .reviews-head { margin-bottom: 34px; }
+      .mobile-cta { display: grid; }
     }
 
     @media (max-width:640px) {
@@ -731,7 +886,8 @@
       .about-copy { gap: 16px; margin-bottom: 20px; }
       .about-note { align-items: flex-start; flex-direction: column; margin-bottom: 18px; }
       .services-grid, .review-cards, .contact-grid, .work-grid { gap: 14px; }
-      .service { min-height: auto; padding: 28px 22px; }
+      .service { min-height: auto; }
+      .service-link { min-height: auto; padding: 28px 22px; }
       .service-num { margin-bottom: 18px; }
       .work-grid { grid-template-columns: 1fr; grid-auto-rows: 230px; }
       .review { min-height: auto; padding: 24px 22px; }
@@ -758,27 +914,29 @@
       html { scroll-behavior: auto; }
       *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
       .reveal { opacity: 1; transform: none; filter: none; }
-      .marquee-track { animation: marquee 18s linear infinite !important; }
+      .marquee-track { animation: none !important; }
     }
   </style>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="nav">
     <div class="wrap nav-inner">
       <a href="#top" class="logo" aria-label="Emmerse Electrical home">
         <span class="logo-mark">
-          <img src="https://websitesample.neocities.org/emmerselogo.png" alt="Emmerse Electrical logo" />
+          <img src="/assets/images/emmerse-logo.webp" alt="" width="34" height="34" />
         </span>
         <span class="logo-text">EMMERSE ELECTRICAL</span>
       </a>
 
-      <nav class="nav-links" aria-label="Main navigation">
+      <nav class="nav-links" id="mainNav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
+        <a href="/quote/">Free Quote</a>
       </nav>
 
       <a href="tel:0410265528" class="nav-cta">
@@ -786,13 +944,14 @@
         Call Now
       </a>
 
-      <button class="mob-toggle" id="mobToggle" aria-label="Open navigation" aria-expanded="false">
+      <button class="mob-toggle" id="mobToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <main id="top">
+  <main id="main-content">
+    <span id="top"></span>
 
     <!-- HERO -->
     <section class="hero">
@@ -804,30 +963,30 @@
             <p class="hero-sub">Emmerse Electrical delivers reliable, high-quality work across Melbourne, from data and EV charging to smart home systems, security, CCTV, maintenance, new builds, and emergency callouts.</p>
             <div class="hero-actions">
               <a href="tel:0410265528" class="btn btn-primary">Call Now</a>
-              <a href="#services" class="btn btn-ghost">View Services</a>
+              <a href="/quote/" class="btn btn-ghost">Get a Free Quote</a>
             </div>
             <div class="hero-meta">
               <div>
-                <div class="meta-num display-font">24/7</div>
-                <div class="meta-label">Emergency availability</div>
+                <div class="meta-num display-font">9 Years</div>
+                <div class="meta-label">Industry experience</div>
               </div>
               <div>
-                <div class="meta-num display-font">Homes</div>
-                <div class="meta-label">Residential work</div>
+                <div class="meta-num display-font">Insured</div>
+                <div class="meta-label">Fully insured</div>
               </div>
               <div>
-                <div class="meta-num display-font">Business</div>
-                <div class="meta-label">Commercial work</div>
+                <div class="meta-num display-font">Free</div>
+                <div class="meta-label">Quotes available</div>
               </div>
             </div>
           </div>
 
           <div class="hero-visual">
             <div class="hv-main">
-              <img src="hallway.png" alt="Emmerse Electrical project photo" />
+              <img src="/assets/images/hallway-lighting.webp" alt="Finished hallway lighting installation by Emmerse Electrical" width="900" height="1125" fetchpriority="high" decoding="async" />
             </div>
             <div class="hv-stack">
-              <img src="frontpagechand.png" alt="Electrical installation detail" />
+              <img src="/assets/images/chandelier-installation.webp" alt="Decorative chandelier lighting installation" width="720" height="705" decoding="async" />
             </div>
             <div class="hv-tag">
               <div class="hv-tag-row">
@@ -844,8 +1003,8 @@
     <!-- MARQUEE -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Data <i>●</i> Car Charging <i>●</i> Maintenance <i>●</i> Smart Home Programming <i>●</i> New Builds <i>●</i> Security &amp; CCTV <i>●</i> Melbourne Electricians You Can Count On <i>●</i></span>
-        <span>Data <i>●</i> Car Charging <i>●</i> Maintenance <i>●</i> Smart Home Programming <i>●</i> New Builds <i>●</i> Security &amp; CCTV <i>●</i> Melbourne Electricians You Can Count On <i>●</i></span>
+        <span>Building Maintenance <i>●</i> Service Work <i>●</i> EV Charger Installation <i>●</i> CCTV &amp; Security <i>●</i> Data <i>●</i> Smart Home Programming <i>●</i> New Builds <i>●</i></span>
+        <span>Building Maintenance <i>●</i> Service Work <i>●</i> EV Charger Installation <i>●</i> CCTV &amp; Security <i>●</i> Data <i>●</i> Smart Home Programming <i>●</i> New Builds <i>●</i></span>
       </div>
     </div>
 
@@ -866,36 +1025,36 @@
             <p>The goal is simple: make electrical work feel straightforward, well managed, and safe from start to finish, whether it is a small residential callout or a larger commercial project.</p>
           </div>
           <div class="about-note">
-            <strong>Clean work, clear updates, and practical solutions that make the whole job feel easier.</strong>
-            <span>24/7</span>
+            <strong>Clean work, clear updates, and practical solutions across Metro Melbourne.</strong>
+            <span>REC 35875</span>
           </div>
           <div class="about-values">
             <div class="value">
               <span class="value-icon">✓</span>
               <div>
-                <h4>Reliable service</h4>
-                <p>Clear communication, honest advice, and work completed properly.</p>
+                <h3>9 years experience</h3>
+                <p>Practical electrical experience across residential and commercial work.</p>
               </div>
             </div>
             <div class="value">
               <span class="value-icon">⚡</span>
               <div>
-                <h4>Fast response</h4>
-                <p>Available 24/7 for emergencies when urgent issues need attention.</p>
+                <h3>Emergency callouts</h3>
+                <p>Available 24/7 for emergencies, with a typical response time of around 1 hour.</p>
               </div>
             </div>
             <div class="value">
               <span class="value-icon">⌂</span>
               <div>
-                <h4>Residential and commercial</h4>
-                <p>Support for homes, offices, shops, projects, and ongoing maintenance.</p>
+                <h3>Fully insured</h3>
+                <p>Emmerse Electrical is fully insured for added confidence.</p>
               </div>
             </div>
             <div class="value">
               <span class="value-icon">🔒</span>
               <div>
-                <h4>Modern systems</h4>
-                <p>Smart home programming, CCTV, security, EV charging, and data solutions.</p>
+                <h3>Free quotes</h3>
+                <p>Call or prepare an email to request a free quote for your job.</p>
               </div>
             </div>
           </div>
@@ -915,40 +1074,55 @@
         </div>
         <div class="services-grid">
           <article class="service" data-svc="1">
-            <p class="service-num">01</p>
-            <div class="service-icon">🌐</div>
-            <h3>Data</h3>
-            <p>Clean, reliable data and networking solutions for homes, offices, and commercial spaces.</p>
+            <a class="service-link" href="/services/electrical-maintenance/">
+              <p class="service-num">01</p>
+              <div class="service-icon" aria-hidden="true">🔧</div>
+              <h3>Building Maintenance &amp; Service Work</h3>
+              <p>Ongoing electrical maintenance, repairs, fault finding, and practical service work to keep homes and businesses running properly.</p>
+              <span class="service-more">Explore maintenance</span>
+            </a>
           </article>
           <article class="service" data-svc="2">
-            <p class="service-num">02</p>
-            <div class="service-icon">🔋</div>
-            <h3>Car Charging</h3>
-            <p>EV charging installation with a safe, practical setup for day-to-day use.</p>
+            <a class="service-link" href="/services/ev-chargers/">
+              <p class="service-num">02</p>
+              <div class="service-icon" aria-hidden="true">🔋</div>
+              <h3>EV Charger Installation</h3>
+              <p>Electric vehicle charger installation with a safe, practical setup for day-to-day use across Metro Melbourne.</p>
+              <span class="service-more">Explore EV chargers</span>
+            </a>
           </article>
           <article class="service" data-svc="3">
-            <p class="service-num">03</p>
-            <div class="service-icon">🔧</div>
-            <h3>Maintenance</h3>
-            <p>Ongoing electrical maintenance, repairs, and fault finding to keep things running properly.</p>
+            <a class="service-link" href="/services/cctv-security/">
+              <p class="service-num">03</p>
+              <div class="service-icon" aria-hidden="true">📷</div>
+              <h3>CCTV &amp; Security</h3>
+              <p>Security, camera, and monitoring installations for homes and businesses.</p>
+              <span class="service-more">Explore CCTV &amp; security</span>
+            </a>
           </article>
           <article class="service" data-svc="4">
-            <p class="service-num">04</p>
-            <div class="service-icon">🏠</div>
-            <h3>Smart Home Programming</h3>
-            <p>Integrated smart home solutions configured for convenience, control, and reliability.</p>
+            <div class="service-link">
+              <p class="service-num">04</p>
+              <div class="service-icon" aria-hidden="true">🌐</div>
+              <h3>Data</h3>
+              <p>Clean, reliable data and networking solutions for homes, offices, and commercial spaces.</p>
+            </div>
           </article>
           <article class="service" data-svc="5">
-            <p class="service-num">05</p>
-            <div class="service-icon">🏗️</div>
-            <h3>New Builds</h3>
-            <p>Electrical work for new homes and projects, planned carefully from rough-in to finish.</p>
+            <div class="service-link">
+              <p class="service-num">05</p>
+              <div class="service-icon" aria-hidden="true">🏠</div>
+              <h3>Smart Home Programming</h3>
+              <p>Integrated smart home solutions configured for convenience, control, and reliability.</p>
+            </div>
           </article>
           <article class="service" data-svc="6">
-            <p class="service-num">06</p>
-            <div class="service-icon">📷</div>
-            <h3>Security &amp; CCTV</h3>
-            <p>Security, camera, and monitoring installations for homes and businesses.</p>
+            <div class="service-link">
+              <p class="service-num">06</p>
+              <div class="service-icon" aria-hidden="true">🏗️</div>
+              <h3>New Builds</h3>
+              <p>Electrical work for new homes and projects, planned carefully from rough-in to finish.</p>
+            </div>
           </article>
         </div>
       </div>
@@ -966,7 +1140,7 @@
         </div>
         <div class="work-grid">
           <article class="work-item span-7">
-            <img src="project.png" alt="Electrical project installation" />
+            <img src="/assets/images/feature-lighting-project.webp" alt="Feature lighting installed beneath a custom entertainment unit" width="1400" height="779" loading="lazy" decoding="async" />
             <div class="work-overlay"></div>
             <div class="work-caption">
               <h3>Project installation</h3>
@@ -974,7 +1148,7 @@
             </div>
           </article>
           <article class="work-item span-5">
-            <img src="sitework.png" alt="Electrical site work" />
+            <img src="/assets/images/kitchen-electrical-fitout.webp" alt="Completed kitchen electrical and lighting fit-out" width="1200" height="927" loading="lazy" decoding="async" />
             <div class="work-overlay"></div>
             <div class="work-caption">
               <h3>Site work</h3>
@@ -982,7 +1156,7 @@
             </div>
           </article>
           <article class="work-item span-3">
-            <img src="completed.png" alt="Completed electrical result" />
+            <img src="/assets/images/completed-electrical-fitout.webp" alt="Completed residential electrical fit-out" width="800" height="1031" loading="lazy" decoding="async" />
             <div class="work-overlay"></div>
             <div class="work-caption">
               <h3>Completed result</h3>
@@ -990,7 +1164,7 @@
             </div>
           </article>
           <article class="work-item span-3">
-            <img src="salon.png" alt="Commercial salon electrical work" />
+            <img src="/assets/images/salon-electrical-fitout.webp" alt="Lighting and electrical work in a completed salon fit-out" width="398" height="530" loading="lazy" decoding="async" />
             <div class="work-overlay"></div>
             <div class="work-caption">
               <h3>Commercial work</h3>
@@ -998,7 +1172,7 @@
             </div>
           </article>
           <article class="work-item span-3">
-            <img src="cctv.png" alt="CCTV and security camera installation" />
+            <img src="/assets/images/cctv-camera-installation.webp" alt="Outdoor CCTV and security camera installation" width="487" height="654" loading="lazy" decoding="async" />
             <div class="work-overlay"></div>
             <div class="work-caption">
               <h3>CCTV installation</h3>
@@ -1006,11 +1180,27 @@
             </div>
           </article>
           <article class="work-item span-3">
-            <img src="frontpagechand.png" alt="Electrical detail work" />
+            <img src="/assets/images/chandelier-installation.webp" alt="Decorative chandelier lighting installation" width="720" height="705" loading="lazy" decoding="async" />
             <div class="work-overlay"></div>
             <div class="work-caption">
               <h3>Detail work</h3>
               <p>Careful installation and setup</p>
+            </div>
+          </article>
+          <article class="work-item span-6">
+            <img src="/assets/images/bathroom-mirror-lighting.webp" alt="Backlit bathroom mirrors and concealed lighting installation" width="1050" height="1400" loading="lazy" decoding="async" />
+            <div class="work-overlay"></div>
+            <div class="work-caption">
+              <h3>Bathroom lighting</h3>
+              <p>Backlit mirrors and concealed feature lighting</p>
+            </div>
+          </article>
+          <article class="work-item span-6">
+            <img src="/assets/images/exterior-stair-lighting.webp" alt="Exterior house and timber stair lighting at dusk" width="1050" height="1400" loading="lazy" decoding="async" />
+            <div class="work-overlay"></div>
+            <div class="work-caption">
+              <h3>Exterior lighting</h3>
+              <p>Entry, garden, and stair lighting</p>
             </div>
           </article>
         </div>
@@ -1026,54 +1216,113 @@
             <h2 class="section-title display-font">What Our Customers <em>Say</em></h2>
           </div>
           <div class="google-rating">
-            <p class="google-rating-num">5<em>.0</em></p>
-            <p class="stars">★ ★ ★ ★ ★</p>
-            <p class="rating-label">Verified on Google</p>
+            <p class="google-rating-num">Google <em>Reviews</em></p>
+            <p class="stars" aria-hidden="true">★ ★ ★ ★ ★</p>
+            <span class="sr-only">The displayed reviews are all rated 5 out of 5 stars.</span>
+            <p class="rating-label">Genuine customer reviews</p>
+            <a class="reviews-link" href="https://www.google.com/maps?cid=1643601696380284558" target="_blank" rel="noopener noreferrer">View all Google reviews</a>
           </div>
         </div>
         <div class="review-cards">
           <article class="review">
-            <p class="review-quote">"</p>
-            <p class="review-body">Professional, reliable, and easy to deal with from start to finish. The job was handled smoothly and the result was exactly what was needed.</p>
+            <p class="review-quote" aria-hidden="true">“</p>
+            <blockquote class="review-body">Highly recommend Emmerse Electrical. Jack is professional, prompt, and did a fantastic job installing our new lights/ kitchen appliances, and power points. Jack is friendly and punctual. Great quality work, fair price, and excellent service overall.</blockquote>
             <div class="review-meta">
               <div class="review-author">
-                <span class="avatar" style="--av:#3aa7d6">MR</span>
+                <span class="avatar" aria-hidden="true">S</span>
                 <div>
-                  <span class="review-name">Melbourne Resident</span>
+                  <cite class="review-name">S</cite>
                   <span class="review-source">Google Review</span>
                 </div>
               </div>
-              <span class="review-stars">★★★★★</span>
+              <span class="review-stars" aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span>
             </div>
           </article>
           <article class="review">
-            <p class="review-quote">"</p>
-            <p class="review-body">Great communication, quality workmanship, and a fast response when it mattered. Everything was completed neatly and on time.</p>
+            <p class="review-quote" aria-hidden="true">“</p>
+            <blockquote class="review-body">Thank you to Emmerse electrical for the excellent and efficient job they did at my house installing new PowerPoint's and a CCTV system. Jack was very easy to work with and helped me out with the price. 10/10 recommendation</blockquote>
             <div class="review-meta">
               <div class="review-author">
-                <span class="avatar" style="--av:#4ade80">HC</span>
+                <span class="avatar" aria-hidden="true">SD</span>
                 <div>
-                  <span class="review-name">Home Client</span>
+                  <cite class="review-name">Saydoun Diab</cite>
                   <span class="review-source">Google Review</span>
                 </div>
               </div>
-              <span class="review-stars">★★★★★</span>
+              <span class="review-stars" aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span>
             </div>
           </article>
           <article class="review">
-            <p class="review-quote">"</p>
-            <p class="review-body">Highly recommended for residential and commercial electrical work. Professional service, fair pricing, and a result that feels dependable.</p>
+            <p class="review-quote" aria-hidden="true">“</p>
+            <blockquote class="review-body">Jack and his team did a great job fitting off our new kitchen. Friendly, prompt, professional and a fair price.</blockquote>
             <div class="review-meta">
               <div class="review-author">
-                <span class="avatar" style="--av:#d39a53">BO</span>
+                <span class="avatar" aria-hidden="true">JZ</span>
                 <div>
-                  <span class="review-name">Business Owner</span>
+                  <cite class="review-name">Jackson Zee</cite>
                   <span class="review-source">Google Review</span>
                 </div>
               </div>
-              <span class="review-stars">★★★★★</span>
+              <span class="review-stars" aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span>
             </div>
           </article>
+          <article class="review">
+            <p class="review-quote" aria-hidden="true">“</p>
+            <blockquote class="review-body">Jack and his amazing staff just finished the rewire of lights and GPOs in the shop. Absolute top boys, always punctual and very easy to deal with. Hard to find good honest trades like them these days.</blockquote>
+            <div class="review-meta">
+              <div class="review-author">
+                <span class="avatar" aria-hidden="true">GL</span>
+                <div>
+                  <cite class="review-name">Grooming Lounge</cite>
+                  <span class="review-source">Google Review</span>
+                </div>
+              </div>
+              <span class="review-stars" aria-hidden="true">★★★★★</span><span class="sr-only">5 out of 5 stars</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Common questions</p>
+            <h2 class="section-title display-font">Helpful answers before you call.</h2>
+          </div>
+          <p>Clear information about quotes, service coverage, hours, emergency callouts, and the work Emmerse Electrical focuses on.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Do you offer free quotes?</summary>
+            <p class="faq-answer">Yes, Emmerse Electrical offers free quotes.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What areas do you service?</summary>
+            <p class="faq-answer">Emmerse Electrical services Metro Melbourne.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer emergency electrical callouts?</summary>
+            <p class="faq-answer">Yes. Emergency electrical callouts are available 24 hours a day, 7 days a week.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What are your normal business hours?</summary>
+            <p class="faq-answer">Normal business hours are Monday to Saturday, 7:00am to 5:00pm. These hours are separate from the 24/7 emergency callout service.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How quickly can you respond?</summary>
+            <p class="faq-answer">The typical response time is around 1 hour.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Are you insured?</summary>
+            <p class="faq-answer">Yes, Emmerse Electrical is fully insured.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What services do you focus on?</summary>
+            <p class="faq-answer">The main focus is building maintenance, electrical service work, EV charger installation, and CCTV and security. Emmerse Electrical also provides data, smart home programming, new builds, and the other electrical services shown above.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -1083,10 +1332,10 @@
       <div class="wrap">
         <div class="cta-inner">
           <h2>Ready to Get Started?</h2>
-          <p class="cta-sub">We're here to help Melbourne homes and businesses stay powered safely. Call now or send us a message — we'll get back to you fast.</p>
+          <p class="cta-sub">We're here to help Melbourne homes and businesses stay powered safely. Call now or prepare a free quote email. Typical response time is around 1 hour.</p>
           <div class="cta-actions">
-            <a href="tel:0410265528" class="btn btn-primary">📞 Call Now — 0410 265 528</a>
-            <a href="mailto:jack@emmerse.au" class="btn btn-ghost">Email jack@emmerse.au</a>
+            <a href="tel:0410265528" class="btn btn-primary">Call Now: 0410 265 528</a>
+            <a href="/quote/" class="btn btn-ghost">Get a Free Quote</a>
           </div>
         </div>
         <div class="contact-grid">
@@ -1099,12 +1348,12 @@
             <p class="contact-value"><a href="mailto:jack@emmerse.au">jack@emmerse.au</a></p>
           </div>
           <div class="contact-item">
-            <p class="contact-label">Available</p>
-            <p class="contact-value">24/7 for emergencies</p>
+            <p class="contact-label">Normal hours</p>
+            <p class="contact-value">Mon-Sat<br />7:00am-5:00pm</p>
           </div>
           <div class="contact-item">
-            <p class="contact-label">Instagram</p>
-            <p class="contact-value"><a href="https://www.instagram.com/emmerse.electrical/" target="_blank" rel="noopener noreferrer">@emmerse.electrical</a></p>
+            <p class="contact-label">Emergency callouts</p>
+            <p class="contact-value">Available 24/7<br />Typical response around 1 hour</p>
           </div>
         </div>
       </div>
@@ -1114,17 +1363,26 @@
 
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div class="footer-logo">
-        <span class="footer-logo-dot"></span>
-        EMMERSE ELECTRICAL
+      <div>
+        <div class="footer-logo">
+          <span class="footer-logo-dot"></span>
+          EMMERSE ELECTRICAL
+        </div>
+        <p class="footer-business">Metro Melbourne, Victoria<br />REC 35875 &nbsp;|&nbsp; ABN 51 737 303 613</p>
       </div>
       <div class="footer-right">
         <span>© <span id="year"></span></span>
+        <a href="/privacy/" class="footer-link">Privacy</a>
         <a href="https://www.instagram.com/emmerse.electrical/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram</a>
         <a href="tel:0410265528" class="footer-link">0410 265 528</a>
       </div>
     </div>
   </footer>
+
+  <nav class="mobile-cta" aria-label="Quick contact">
+    <a class="mobile-cta-call" href="tel:0410265528">Call Now</a>
+    <a class="mobile-cta-quote" href="/quote/">Free Quote</a>
+  </nav>
 
   <script>
     (() => {
@@ -1140,14 +1398,13 @@
 
       // Nav scroll state
       const nav = document.querySelector(".nav");
-      const updateNav = () => nav?.classList.toggle("scrolled", window.scrollY > 20);
-      updateNav();
-      let ticking = false;
-      window.addEventListener("scroll", () => {
-        if (ticking) return;
-        requestAnimationFrame(() => { updateNav(); ticking = false; });
-        ticking = true;
-      }, { passive: true });
+      const topAnchor = $("top");
+      if (nav && topAnchor && "IntersectionObserver" in window) {
+        const navObserver = new IntersectionObserver(([entry]) => {
+          nav.classList.toggle("scrolled", !entry.isIntersecting);
+        }, { rootMargin: "-20px 0px 0px" });
+        navObserver.observe(topAnchor);
+      }
 
       // Mobile menu
       const mobToggle = $("mobToggle");
@@ -1155,22 +1412,27 @@
       const closeMenu = () => {
         navLinks?.classList.remove("is-open");
         mobToggle?.setAttribute("aria-expanded", "false");
+        mobToggle?.setAttribute("aria-label", "Open navigation");
       };
       if (mobToggle && navLinks) {
         mobToggle.addEventListener("click", () => {
           const isOpen = navLinks.classList.toggle("is-open");
           mobToggle.setAttribute("aria-expanded", String(isOpen));
+          mobToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
         });
         navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
         window.addEventListener("resize", () => { if (window.innerWidth > 980) closeMenu(); });
         document.addEventListener("keydown", e => { if (e.key === "Escape") closeMenu(); });
+        document.addEventListener("click", e => {
+          if (!navLinks.contains(e.target) && !mobToggle.contains(e.target)) closeMenu();
+        });
       }
 
       // Reveal on scroll
       const revealEls = $$([
         ".eyebrow", ".hero h1", ".hero-sub", ".hero-actions", ".hero-meta", ".hero-visual",
         ".section-label", ".section-title", ".section-head p",
-        ".about-body", ".service", ".work-item", ".review", ".cta-inner", ".contact-item"
+        ".about-body", ".service", ".work-item", ".review", ".faq-item", ".cta-inner", ".contact-item"
       ].join(","));
 
       revealEls.forEach((el, i) => {
