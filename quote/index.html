@@ -11,22 +11,22 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="preload" href="/assets/fonts/bebas-neue-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="/assets/images/bathroom-mirror-lighting.webp" as="image" type="image/webp" fetchpriority="high" />
-  <link rel="stylesheet" href="/assets/css/site.css" />
+  <link rel="preload" href="/assets/images/office-lighting.jpg" as="image" type="image/jpeg" imagesrcset="/assets/images/office-lighting-small.jpg 486w, /assets/images/office-lighting.jpg 972w" imagesizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1020px) calc(100vw - 44px), 48vw" fetchpriority="high" />
+  <link rel="stylesheet" href="/assets/css/site.css?v=20260911" />
   <meta property="og:title" content="Get a Free Electrical Quote | Emmerse Electrical" />
   <meta property="og:description" content="Prepare a quote request for electrical work across Metro Melbourne, then send it from your own email app." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://emmerse.au/quote/" />
-  <meta property="og:image" content="https://emmerse.au/assets/images/emmerse-social-share.webp" />
+  <meta property="og:image" content="https://emmerse.au/assets/images/emmerse-social-share.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Exterior and stair lighting installed by Emmerse Electrical" />
+  <meta property="og:image:alt" content="Commercial office lighting by Emmerse Electrical" />
   <meta property="og:site_name" content="Emmerse Electrical" />
   <meta property="og:locale" content="en_AU" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Get a Free Electrical Quote | Emmerse Electrical" />
   <meta name="twitter:description" content="Prepare a free quote request for electrical work in Metro Melbourne." />
-  <meta name="twitter:image" content="https://emmerse.au/assets/images/emmerse-social-share.webp" />
+  <meta name="twitter:image" content="https://emmerse.au/assets/images/emmerse-social-share.jpg" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -55,7 +55,7 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="nav"><div class="wrap nav-inner">
-    <a href="/" class="logo" aria-label="Emmerse Electrical home"><span class="logo-mark"><img src="/assets/images/emmerse-logo.webp" alt="" width="34" height="34" /></span><span class="logo-text">EMMERSE ELECTRICAL</span></a>
+    <a href="/" class="logo" aria-label="Emmerse Electrical home"><span class="logo-mark"><img src="/assets/images/emmerse-logo.png" alt="" width="34" height="34" /></span><span class="logo-text">EMMERSE ELECTRICAL</span></a>
     <nav class="nav-links" id="mainNav" aria-label="Main navigation"><a href="/#about">About</a><a href="/#services">Services</a><a href="/#work">Work</a><a href="/#reviews">Reviews</a><a href="/#contact">Contact</a><a href="/quote/" aria-current="page">Free Quote</a></nav>
     <a class="nav-cta" href="tel:0410265528">Call Now</a>
     <button class="mob-toggle" id="mobToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
@@ -67,29 +67,32 @@
       <div>
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>Free quote</span></nav>
         <h1>Get a <em>Free Electrical Quote</em></h1>
-        <p class="hero-copy">Add your job details, then open your email app with a ready-to-send quote request for Jack.</p>
-        <div class="actions"><a class="btn btn-primary" href="tel:0410265528">Call Jack</a><a class="btn btn-ghost" href="mailto:jack@emmerse.au?subject=Free%20quote%20request">Email Directly</a></div>
+        <p class="hero-copy">Call or email Emmerse about maintenance, CCTV or your next electrical job. You can also prepare a quote email below.</p>
+        <div class="actions"><a class="btn btn-primary" href="tel:0410265528">Call Emmerse</a><a class="btn btn-ghost" href="mailto:jack@emmerse.au?subject=Free%20quote%20request">Email Directly</a></div>
       </div>
-      <figure class="hero-image"><img src="/assets/images/bathroom-mirror-lighting.webp" alt="Backlit bathroom mirrors and concealed lighting installation" width="1050" height="1400" fetchpriority="high" decoding="async" /></figure>
+      <figure class="hero-image"><img src="/assets/images/office-lighting.jpg" alt="Lighting in a commercial office meeting space" width="972" height="1600" fetchpriority="high" decoding="async" srcset="/assets/images/office-lighting-small.jpg 486w, /assets/images/office-lighting.jpg 972w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1020px) calc(100vw - 44px), 48vw" /></figure>
     </div></section>
 
     <section class="section"><div class="wrap quote-layout">
       <form class="quote-form" id="quoteForm" novalidate>
+        <h2>Prepare a quote email.</h2>
+        <noscript><p class="form-note">Please call or <a href="mailto:jack@emmerse.au">email Emmerse</a> directly. This email preparation tool needs JavaScript.</p></noscript>
         <div class="form-grid">
           <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name" required /></div>
           <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required /></div>
           <div class="field"><label for="suburb">Suburb</label><input id="suburb" name="suburb" type="text" autocomplete="address-level2" required /></div>
-          <div class="field"><label for="service">Service</label><select id="service" name="service" required><option value="">Choose a service</option><option value="Electrical maintenance">Building maintenance and service work</option><option value="EV charger installation">EV charger installation</option><option value="CCTV and security">CCTV and security</option><option value="Data">Data</option><option value="Smart home programming">Smart home programming</option><option value="New build electrical work">New builds</option><option value="Emergency electrical callout">Emergency electrical callout</option><option value="Other electrical work">Other electrical work</option></select></div>
-          <div class="field field-full"><label for="description">Short job description</label><textarea id="description" name="description" maxlength="1000" required placeholder="Tell Jack what you need help with and any useful property or access details."></textarea></div>
+          <div class="field"><label for="service">Service</label><select id="service" name="service" required><option value="">Choose a service</option><option value="Electrical maintenance">Commercial maintenance and service work</option><option value="CCTV and security">CCTV and security</option><option value="EV charger installation">EV charger installation</option><option value="Data">Data</option><option value="Smart home programming">Smart home programming</option><option value="New build electrical work">New builds</option><option value="Emergency electrical callout">Emergency electrical callout</option><option value="Other electrical work">Other electrical work</option></select></div>
+          <div class="field field-full"><label for="description">Short job description</label><textarea id="description" name="description" maxlength="1000" required placeholder="Tell us what you need help with and any useful property or access details."></textarea></div>
         </div>
         <p class="form-note">This form does not send or store your details on the website. The button opens your email app with the information filled in so you can review and send it to jack@emmerse.au.</p>
-        <button class="btn btn-primary" type="submit">Open Email App</button>
+        <button class="btn btn-primary" type="submit" disabled>Open Email App</button>
         <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <a id="emailDraftLink" class="draft-link" hidden>Open the prepared email again</a>
       </form>
 
       <aside class="info-panel">
         <h2>Prefer direct contact?</h2>
-        <p>Call or email Jack directly. Free quotes are available across Metro Melbourne.</p>
+        <p>Call or email Emmerse directly. Free quotes are available across Metro Melbourne.</p>
         <div class="direct-links">
           <a class="direct-link" href="tel:0410265528"><span>Phone</span><strong>0410 265 528</strong></a>
           <a class="direct-link" href="mailto:jack@emmerse.au?subject=Free%20quote%20request"><span>Email</span><strong>jack@emmerse.au</strong></a>
@@ -102,8 +105,8 @@
   </main>
 
   <footer class="footer"><div class="wrap footer-inner"><div><p class="footer-brand">EMMERSE ELECTRICAL</p><p class="footer-business">Metro Melbourne, Victoria<br />REC 35875 | ABN 51 737 303 613</p></div><div class="footer-links"><span>© <span id="year"></span></span><a href="/privacy/">Privacy</a><a href="https://www.instagram.com/emmerse.electrical/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="tel:0410265528">0410 265 528</a></div></div></footer>
-  <nav class="mobile-cta" aria-label="Quick contact"><a class="mobile-cta-call" href="tel:0410265528">Call Now</a><a class="mobile-cta-quote" href="mailto:jack@emmerse.au?subject=Free%20quote%20request">Email Jack</a></nav>
-  <script src="/assets/js/site.js" defer></script>
-  <script src="/assets/js/quote.js" defer></script>
+  <nav class="mobile-cta" aria-label="Quick contact"><a class="mobile-cta-call" href="tel:0410265528">Call Now</a><a class="mobile-cta-quote" href="mailto:jack@emmerse.au?subject=Free%20quote%20request">Email Emmerse</a></nav>
+  <script src="/assets/js/site.js?v=20260911" defer></script>
+  <script src="/assets/js/quote.js?v=20260911" defer></script>
 </body>
 </html>

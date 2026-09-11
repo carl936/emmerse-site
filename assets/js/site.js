@@ -24,10 +24,14 @@
       const open = links.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", String(open));
       toggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      if (open) links.querySelector("a")?.focus();
     });
     links.querySelectorAll("a").forEach(link => link.addEventListener("click", closeMenu));
     document.addEventListener("keydown", event => {
-      if (event.key === "Escape") closeMenu();
+      if (event.key === "Escape" && links.classList.contains("is-open")) {
+        closeMenu();
+        toggle.focus();
+      }
     });
     document.addEventListener("click", event => {
       if (!links.contains(event.target) && !toggle.contains(event.target)) closeMenu();

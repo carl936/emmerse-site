@@ -2,6 +2,8 @@
   const form = document.getElementById("quoteForm");
   const status = document.getElementById("formStatus");
   if (!form) return;
+  form.querySelector('button[type="submit"]').disabled = false;
+  const draftLink = document.getElementById("emailDraftLink");
 
   const preset = new URLSearchParams(window.location.search).get("service");
   const serviceSelect = form.elements.namedItem("service");
@@ -22,7 +24,7 @@
     const description = String(data.get("description") || "").trim();
     const subject = `Free quote request: ${service}${suburb ? ` - ${suburb}` : ""}`;
     const body = [
-      "Hi Jack,",
+      "Hello Emmerse Electrical,",
       "",
       "I would like to request a free quote.",
       "",
@@ -37,7 +39,12 @@
       "Thanks"
     ].join("\n");
 
-    if (status) status.textContent = "Opening your email app with the quote details filled in.";
-    window.location.href = `mailto:jack@emmerse.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:jack@emmerse.au?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (status) status.textContent = "Opening your email app. Review and send your request there; nothing has been sent by this website.";
+    if (draftLink) {
+      draftLink.href = mailto;
+      draftLink.hidden = false;
+    }
+    window.location.href = mailto;
   });
 })();
