@@ -57,15 +57,17 @@ html { scroll-padding-top: 100px; }
 .work-caption { position: static; padding: 17px 0 8px; color: var(--ink); transform: none; background: none; }
 .work-caption h3 { font-size: 1.6rem; line-height: 1.1; }
 .work-caption p { color: var(--ink-soft); font-size: .83rem; margin-top: 5px; }
-.work-commercial-project, .work-plant-room-electrical { grid-column: span 3; }
-.work-commercial-project img, .work-plant-room-electrical img { aspect-ratio: 4/3; object-position: 50% 45%; }
+.work-domestic-projects, .work-new-build-projects { grid-column: span 3; }
+.work-domestic-projects img, .work-new-build-projects img { aspect-ratio: 4/3; }
+.work-domestic-projects img { object-position: 50% 30%; }
+.work-new-build-projects img { object-position: 50% 85%; }
 .work-finished-installation { grid-column: 5 / span 2; grid-row: 2; }
 .work-commercial-electrical-work { grid-column: 1 / span 2; grid-row: 2; }
 .work-commercial-hvac-electrical { grid-column: 3 / span 2; grid-row: 2; }
 .work-switchboard-upgrade { grid-column: span 3; }
 .work-switchboard-upgrade img { object-fit: contain; aspect-ratio: auto; }
-.work-entrance-lighting { grid-column: span 3; }
-.work-entrance-lighting img { aspect-ratio: 4/3; object-position: 50% 30%; }
+.work-architectural-lighting { grid-column: span 3; }
+.work-architectural-lighting img { aspect-ratio: 4/3; object-position: 65% 60%; }
 .reviews .section-label, .faq .section-label { display: none; }
 .review-cards { grid-template-columns: repeat(2,1fr); }
 .review { min-height: auto; }
@@ -98,7 +100,7 @@ html { scroll-padding-top: 100px; }
   .work-item { grid-column: auto; grid-row: auto; margin: 0; }
   .work-item img { aspect-ratio: 3/4; }
   .work-switchboard-upgrade img { aspect-ratio: auto; }
-  .work-entrance-lighting img { aspect-ratio: 3/4; }
+  .work-architectural-lighting img { aspect-ratio: 3/4; }
   .secondary-services { grid-template-columns: repeat(2,1fr); }
 }
 @media (max-width: 640px) {
